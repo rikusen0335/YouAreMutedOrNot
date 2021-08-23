@@ -1,3 +1,10 @@
 import { h, render } from 'preact'
+import { App } from './App'
 
-render(<div>Hello World</div>, document.querySelector('#root')!)
+import './style.css'
+
+const el = document.querySelector('body')
+
+if (el) {
+  render(<App />, el)
+}

@@ -28,7 +28,8 @@
   },
   "include": [
     "src/**/*.ts",
-    "types/*.d.ts"
+    "types/*.d.ts",
+    "src/contexts/LockContext.tsx"
   ],
   "exclude": [
     "node_modules"

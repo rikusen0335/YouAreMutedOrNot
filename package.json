@@ -27,7 +27,7 @@
     "pre-commit": "lint-staged"
   },
   "lint-staged": {
-    "packages/src-renderer/**/*.{js,ts}": [
+    "packages/src-renderer/**/*.{js,ts,tsx}": [
       "eslint --fix"
     ]
   },

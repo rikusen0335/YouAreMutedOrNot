@@ -7,7 +7,8 @@
     "distDir": "../src-renderer/dist",
     "devPath": "http://localhost:3000",
     "beforeDevCommand": "yarn dev:renderer",
-    "beforeBuildCommand": "yarn build:renderer"
+    "beforeBuildCommand": "yarn build:renderer",
+    "withGlobalTauri": true
   },
   "tauri": {
     "bundle": {
@@ -49,15 +50,19 @@
       "active": false
     },
     "allowlist": {
-      "all": true
+      "window": {
+        "all": true
+      }
     },
     "windows": [
       {
-        "title": "Tauri App Template",
         "width": 800,
         "height": 600,
         "resizable": true,
-        "fullscreen": false
+        "fullscreen": false,
+        "transparent": true,
+        "alwaysOnTop": true,
+        "decorations": false
       }
     ],
     "security": {
